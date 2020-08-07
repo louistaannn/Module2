@@ -1,0 +1,89 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;  
+  font-size: 175%;
+}
+
+p {
+  border: 3px solid black;
+  border-top: 0px;
+  border-right: 0px;
+  width: 30%;
+  float:right;
+  margin-top: 0px;
+  font-size: 125%;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#p1 {
+  background-color: #FA8072;
+}
+
+#p2 {
+  background-color: #DC143C;
+  color: white;
+}
+
+#p3 {
+  background-color: #F0E68C;
+}
+
+section {
+  clear: right;
+  padding: 10px;
+  text-align: justify;
+}
+
+div {
+  background-color: grey;
+}
+
+.row {
+  background-color: white;
+  padding:10px;
+}
+
+.row > div{
+  border: 3px solid black;
+}
+
+/********** desktop only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float:left;
+    width: 30%;
+    margin:1.65%;
+  }
+}
+
+/********** tablet only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 46.7%;
+    margin:1.65%;
+  }
+
+  #div3 {
+    width: 96.7%;
+    margin:1.65%;
+  }
+}
+
+/********** mobile only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 96.7%;
+    margin:1.65%;
+  }
+}
